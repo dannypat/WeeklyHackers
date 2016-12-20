@@ -39,6 +39,8 @@ Give me your GitHub email or username, and I will send you an invitation to beco
 You will get an email with an invitation, accept it and you will have full access to the repository.
 
 ##More Resources for Help:
-https://wiki.finra.org/display/devexchange/Proxy+settings+for+Git
-https://git-scm.com/book/en/v1/Getting-Started-Installing-Git
-https://git-scm.com/book/en/v1/Getting-Started-First-Time-Git-Setup
+[Finra Proxy Settings](https://wiki.finra.org/display/devexchange/Proxy+settings+for+Git)
+
+[Installing Git](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git)
+
+[Git Setup](https://git-scm.com/book/en/v1/Getting-Started-First-Time-Git-Setup)
