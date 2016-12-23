@@ -23,6 +23,24 @@ $ git clone https://github.com/dannypat/WeeklyHackers/
 
 If you cannot access github, see Connect To GitHub From a Finra Laptop
 
+##Create Your Own Branch For Your Project
+
+Enter the following commands in git bash:
+
+```git
+$ git checkout -b <your branch name e.g. dannys_branch>
+$ mkdir <folder name e.g. Angular2_demo>
+$ cd <folder name>
+$ touch <file name e.g. tsconfig.json>
+#Add some content to the file you just made
+#Note that the above example file name is for an Angular2 project
+#If you are working on a different language/tool, your file names will be different
+$ cd ..
+$ git add . -A
+$ git commit -m'First commit to my project'
+$ git push origin <your branch name>
+```
+
 ##Connect To GitHub From a Finra Laptop
 
 Enter the following commands in git bash:
