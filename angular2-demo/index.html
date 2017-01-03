@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.6/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.6/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.6/angular2.dev.js"></script>
+    <script>
+      System.config({
+        transpiler: 'typescript',
+        typescriptOptions: { emitDecoratorMetadata: true },
+        packages: {
+			'app': {defaultExtension: 'ts'},
+			'hello': {defaultExtension: 'ts'},
+			'modules': {defaultExtension: 'ts'},
+			'components': {defaultExtension: 'ts'},
+			'templates': {defaultExtension: 'ts'},
+			'metadata':{defaultExtension: 'ts'},
+			'databinding': {defaultExtension: 'ts'},
+			'datadisplay': {defaultExtension: 'ts'}
+		},
+        map: { 'app': './app' }
+      });
+      System.import('app/environment/environment_main').then(null, console.error.bind(console));
+	  System.import('app/helloworld/hello_world_main').then(null, console.error.bind(console));
+	  System.import('app/module/modules_main').then(null, console.error.bind(console));
+	  System.import('app/component/component_main').then(null, console.error.bind(console));
+	  System.import('app/template/template_main').then(null, console.error.bind(console));
+	  System.import('app/metadata/metadata_main').then(null, console.error.bind(console));
+	  System.import('app/databinding/data_binding_main').then(null, console.error.bind(console));
+	  System.import('app/datadisplay/datadisplay_main').then(null, console.error.bind(console));
+	  System.import('app/userinput/user_input').then(null, console.error.bind(console));
+    </script>
+  </head>
+<body>
+   <app>Loading main...</app>
+   <hello>Loading hello...</hello>
+   <modules>Loading modules...</modules>
+   <components>Loading components...</components>
+   <templates>Loading templates...</templates>
+   <metadata>Loading metadata...</metadata>
+   <databinding>Loading databinding...</databinding>
+   <datadisplay>Loading datadisplay...</datadisplay>
+   <input-event>Loading input...</input-event>
+</body>
+</html>
